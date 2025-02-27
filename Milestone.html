@@ -49,20 +49,6 @@
         }
         h2 {
             color: #2c3e50;
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-            border: 3px solid #ff5733;
         }
         a {
             color: #007bff;
@@ -72,12 +58,22 @@
         a:hover {
             text-decoration: underline;
         }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px 0;
+        }
         footer {
             background: #2c3e50;
             color: white;
             text-align: center;
             padding: 20px 0;
             margin-top: 40px;
+        }
+        .video-container {
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -96,10 +92,8 @@
     
     <section id="bio">
         <h2>About Me</h2>
-        <img src="path/to/your/photo.jpg" alt="Kazabavaho Ntwari Rugwiro David's Photo">
         <p>I am a dedicated software engineer passionate about developing innovative solutions that drive efficiency and enhance security. With a strong foundation in cybersecurity and a keen interest in cutting-edge technologies, I am committed to solving real-world challenges through software development.</p>
-        <img src="your-photo.jpeg" alt="Me" class="profile" />    
-</section>
+    </section>
     
     <section id="portfolio">
         <h2>Portfolio</h2>
@@ -112,6 +106,17 @@
     
     <section id="elevator-pitch">
         <h2>Elevator Pitch</h2>
+        <!-- Profile Photo -->
+        <img src="path/to/your/photo.jpg" alt="Kazabavaho Ntwari Rugwiro David" class="profile-photo" />
+        
+        <!-- Video Embed -->
+        <div class="video-container">
+            <video width="600" controls>
+                <source src="path/to/your/elevator-pitch.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
         <p>A short, compelling introduction to my skills and career aspirations is coming soon...</p>
         <p><a href="elevator-pitch.html" target="_blank">View Elevator Pitch</a></p>
     </section>
